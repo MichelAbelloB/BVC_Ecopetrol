@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Analisis - Ecopetrol</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!-- fevicon -->
+      <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" />
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo"><img src="{{ url_for('static', filename='images/logo.png') }}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+         </nav>
+      </div>
+      <!-- header section end -->
+      <!-- banner section end -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="banner_taital">Principal compañía de petróleo y gas de Colombia.</div>
+                  <p class="banner_text">Ecopetrol, antiguamente Empresa Colombiana de Petróleos S.A. es la principal empresa de petróleo de Colombia. 
+                     Es la segunda empresa petrolera más grande de Latinoamérica.​ La empresa Platts ubicó a Ecopetrol como una de las 14 mejores 
+                     empresas petroleras del mundo.</p>
+                    <div class="see_bt"><a href="https://www.bvc.com.co/renta-variable-mercado-local/ECOPETROL?tab=informacion-del-emisor">DataSets</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- arrival section start -->
+      <div class="arrival_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-lg-4">
+                  <div class="image_1">
+                     <img src="data:image/png;base64,{{ plot_url }}" alt="Plot">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- arrival section end -->
+      <!-- movies section start -->
+      <div class="movies_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-lg-4">
+                    <div class="image_1">
+                        <img src="data:image/png;base64,{{ plot_url_corr }}" alt="Plot">
+                     </div>
+               </div>
+             </div>
+         </div>
+      </div>
+      <!-- movies section end -->
+      <!-- newsletter section start -->
+      <div class="newsletter_section layout_padding">
+         <div class="container">
+         </div>
+      </div>
+      <!-- newsletter section end -->
+      <!-- cooming  section start -->
+      <div class="arrival_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                  <div class="image_1">
+                     <img src="data:image/png;base64,{{ plot_url_hist }}" alt="Plot">
+                  </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- movies section start -->
+     <div class="movies_section layout_padding">
+        <div class="container">
+           <div class="row">
+               <div class="col-sm-6">
+                  <div class="image_1">
+                     <img src="data:image/png;base64,{{ plot_url_reg_lineal }}" alt="Plot">
+                  </div>
+               </div>
+            </div>
+        </div>
+     </div>
+     <!-- cooming  section start -->
+     <div class="arrival_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-6 col-lg-4">
+               <div class="image_1">
+                  <img src="data:image/png;base64,{{ plot_url_anomalies }}" alt="Plot">
+               </div>
+           </div>
+        </div>
+     </div>
+      <!-- newsletter section start -->
+      <div class="newsletter_section layout_padding">
+        <div class="container">
+        </div>
+     </div>
+     <!-- newsletter section end -->
+     <!-- movies section start -->
+     <div class="movies_section layout_padding">
+        <div class="container">
+           <div class="row">
+               <div class="col-sm-6">
+                  <div class="image_1">
+                     <img src="data:image/png;base64,{{ plot_url_candlestick }}" alt="Plot"style="width: 50%; height: auto;">
+                  </div>
+            </div>
+        </div>
+     </div>
+<!-- footer  section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="social_icon">
+            <ul>
+            <li><a href="https://www.linkedin.com/in/michel-abello/"><img class="img_icon" src="static/images/linkedin-icon.png"></a></li>
+            <li><a href="https://github.com/MichelAbelloB"><img class="img_icon" src="static/images/github-icon.png"></a></li>
+            <li><a href="https://michelabellob.github.io/My_Web_Site/"><img class="img_icon" src="static/images/web-icon.png"></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer  section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <div class="copyright_text">Todos los derechos reservados <a href="https://michelabellob.github.io/My_Web_Site/">Michel.A</a></div>
+      </div>
+   </div>
+   </body>
+</html>
